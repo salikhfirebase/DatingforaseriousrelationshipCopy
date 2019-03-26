@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Dating for a serious relationship</string>
+    <string name="choose_your_gender">Укажите ваш пол!</string>
+    <string name="man_answer">Мужчину</string>
+    <string name="man_answer_main">Мужчина</string>
+    <string name="woman_answer">Женщину</string>
+    <string name="woman_answer_main">Женщина</string>
+    <string name="continue_string">Дальше</string>
+    <string name="who_are_you_looking_for">Кого вы ищете?</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="btn_register_string">Зарегистрироваться</string>
+    <string name="btn_signin_string">Войти</string>
+    <string name="btn_text_registerActivity">Если у вас нет аккаунта, зарегистрируйтесь</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="sign_in_string">Вход в приложение</string>
+    <string name="fill_right_fields">Заполните поля!</string>
+    <string name="text_success_registration">Ваша регистрация прошла успешно, мы выслали вам письмо на почту для подтверждения.</string>
+    <string name="text_sign_in">Вы успешно авторизовались.</string>
+    <string name="empty_text">   </string>
+    <string name="facebook_app_id">1797376627033880</string>
+    <string name="fb_login_protocol_scheme">fb1797376627033880</string>
+</resources>

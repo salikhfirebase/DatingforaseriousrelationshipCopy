@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "166457575199",
+    "firebase_url": "https://datingfsr.firebaseio.com",
+    "project_id": "datingfsr",
+    "storage_bucket": "datingfsr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166457575199:android:16f42d47ce635119",
+        "android_client_info": {
+          "package_name": "com.mazur.datingforaseriousrelationship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166457575199-rgdbna1hh7vj3t92plm7slkl51gtkqvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWIvJ2dI1J6wNAs1XynDejt3deOmYFNcw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
