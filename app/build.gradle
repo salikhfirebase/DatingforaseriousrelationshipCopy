@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.mazur.datingforaseriousrelationship"
+        applicationId "com.dating.relations"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -30,6 +30,9 @@ dependencies {
     // Firebase
     implementation 'com.google.firebase:firebase-core:16.0.8'
     implementation 'com.google.firebase:firebase-config:16.4.1'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.5.0'
+    implementation 'com.google.firebase:firebase-dynamic-links:16.1.8'
 
     implementation 'androidx.browser:browser:1.0.0-beta01'
 
@@ -38,6 +41,9 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     implementation 'com.yandex.android:mobmetricalib:3.5.3'
+
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
+    implementation 'com.github.arturogutierrez:badges:1.0.5@aar'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
