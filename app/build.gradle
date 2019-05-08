@@ -5,8 +5,8 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.dating.relations"
-        minSdkVersion 21
+        applicationId "easy.dating.foryou"
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
