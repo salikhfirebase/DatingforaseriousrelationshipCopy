@@ -175,7 +175,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data
-                    android:host="ashleymadison.com"
+                    android:host="www.ashleymadison.com"
                     android:scheme="https"/>
             </intent-filter>
         </activity>

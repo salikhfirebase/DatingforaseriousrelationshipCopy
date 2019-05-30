@@ -90,7 +90,9 @@ class SplashActivity : BaseActivity() {
                         finish()
                     }
                 } else if (url.contains("/main")) {
-                    startActivity(Intent(this@SplashActivity, MainScreenActivity::class.java))
+                    val taskUrl = dataSnapshot.child(TASK_URL).value as String
+                    startActivity(Intent(this@SplashActivity, WebViewActivity::class.java)
+                            .putExtra(EXTRA_TASK_URL, taskUrl))
                     finish()
                 }
                 progressBar.visibility = View.GONE
