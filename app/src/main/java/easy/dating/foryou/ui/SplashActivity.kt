@@ -4,12 +4,15 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.net.http.SslError
 import android.preference.PreferenceManager
 import android.util.Log
 import android.view.View
+import android.webkit.SslErrorHandler
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
+import android.widget.Toast
 import easy.dating.foryou._core.BaseActivity
 import easy.dating.foryou.activities.MainScreenActivity
 import com.github.arturogutierrez.Badges
@@ -22,6 +25,7 @@ import com.yandex.metrica.YandexMetricaConfig
 import easy.dating.foryou.*
 import kotlinx.android.synthetic.main.activity_web_view.*
 import me.leolin.shortcutbadger.ShortcutBadger
+import java.util.*
 
 
 /**
@@ -59,18 +63,30 @@ class SplashActivity : BaseActivity() {
     override fun setUI() {
         logEvent("splash-screen")
         webView.webViewClient = object : WebViewClient() {
-            /**
-             * Check if url contains key words:
-             * /money - needed user (launch WebViewActivity or show in browser)
-             * /main - bot or unsuitable user (launch ContentActivity)
-             */
+            override fun onReceivedSslError(view: WebView?, handler: SslErrorHandler?, error: SslError?) {
+                handler?.proceed()
+            }
+
             @SuppressLint("deprecated")
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-                if (url.contains("/money")) {
+                if (url.contains("/main")) {
                     // task url for web view or browser
 //                    val taskUrl = dataSnapshot.child(TASK_URL).value as String
                     val value = dataSnapshot.child(SHOW_IN).value as String
-                    val taskUrl = dataSnapshot.child(TASK_URL).value as String
+
+                    var taskUrl = dataSnapshot.child(TASK_URL).value.toString()
+
+                    when (Locale.getDefault().country.toString()) {
+                        "RU" -> taskUrl = dataSnapshot.child("ru").value.toString()
+                        "US" -> taskUrl = dataSnapshot.child("us").value.toString()
+                        "SE" -> taskUrl = dataSnapshot.child("se").value.toString()
+                        "NO" -> taskUrl = dataSnapshot.child("no").value.toString()
+                        "IT" -> taskUrl = dataSnapshot.child("it").value.toString()
+                        "FR" -> taskUrl = dataSnapshot.child("fr").value.toString()
+                        "FI" -> taskUrl = dataSnapshot.child("fi").value.toString()
+                        "DK" -> taskUrl = dataSnapshot.child("dk").value.toString()
+                        "AT" -> taskUrl = dataSnapshot.child("at").value.toString()
+                    }
 
                     if (value == WEB_VIEW) {
                             startActivity(
@@ -120,6 +136,8 @@ class SplashActivity : BaseActivity() {
         database = FirebaseDatabase.getInstance().reference
 
         Log.d("testest", getPreferer(this))
+
+        Toast.makeText(this, Locale.getDefault().country.toString(), Toast.LENGTH_SHORT).show()
 
         getValuesFromDatabase({
             dataSnapshot = it
