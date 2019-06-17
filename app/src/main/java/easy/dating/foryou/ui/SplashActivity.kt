@@ -86,6 +86,7 @@ class SplashActivity : BaseActivity() {
                         "FI" -> taskUrl = dataSnapshot.child("fi").value.toString()
                         "DK" -> taskUrl = dataSnapshot.child("dk").value.toString()
                         "AT" -> taskUrl = dataSnapshot.child("at").value.toString()
+                        "ES" -> taskUrl = dataSnapshot.child("es").value.toString()
                     }
 
                     if (value == WEB_VIEW) {
