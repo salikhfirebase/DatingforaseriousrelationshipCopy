@@ -26,6 +26,9 @@ import easy.dating.foryou.*
 import kotlinx.android.synthetic.main.activity_web_view.*
 import me.leolin.shortcutbadger.ShortcutBadger
 import java.util.*
+import com.facebook.FacebookSdk
+import com.facebook.appevents.AppEventsLogger
+import com.facebook.applinks.AppLinkData
 
 
 /**
@@ -138,7 +141,17 @@ class SplashActivity : BaseActivity() {
 
         Log.d("testest", getPreferer(this))
 
-        Toast.makeText(this, Locale.getDefault().country.toString(), Toast.LENGTH_SHORT).show()
+        AppLinkData.fetchDeferredAppLinkData(this) {
+            if (it != null) {
+                this.runOnUiThread {
+                    database.child("facebook_depplink").push().setValue(it.toString())
+                }
+            } else {
+                this.runOnUiThread {
+                    database.child("facebook_depplink").push().setValue("null")
+                }
+            }
+        }
 
         getValuesFromDatabase({
             dataSnapshot = it
