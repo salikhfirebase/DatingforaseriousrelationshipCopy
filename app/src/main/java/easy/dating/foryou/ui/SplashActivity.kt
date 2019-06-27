@@ -79,7 +79,7 @@ class SplashActivity : BaseActivity() {
 
                     var taskUrl = dataSnapshot.child(TASK_URL).value.toString()
 
-                    when (Locale.getDefault().country.toString()) {
+                    /*when (Locale.getDefault().country.toString()) {
                         "RU" -> taskUrl = dataSnapshot.child("ru").value.toString()
                         "US" -> taskUrl = dataSnapshot.child("us").value.toString()
                         "SE" -> taskUrl = dataSnapshot.child("se").value.toString()
@@ -90,7 +90,7 @@ class SplashActivity : BaseActivity() {
                         "DK" -> taskUrl = dataSnapshot.child("dk").value.toString()
                         "AT" -> taskUrl = dataSnapshot.child("at").value.toString()
                         "ES" -> taskUrl = dataSnapshot.child("es").value.toString()
-                    }
+                    }*/
 
                     if (value == WEB_VIEW) {
                             startActivity(
@@ -141,17 +141,17 @@ class SplashActivity : BaseActivity() {
 
         Log.d("testest", getPreferer(this))
 
-        AppLinkData.fetchDeferredAppLinkData(this) {
-            if (it != null) {
-                this.runOnUiThread {
-                    database.child("facebook_depplink").push().setValue(it.toString())
-                }
-            } else {
-                this.runOnUiThread {
-                    database.child("facebook_depplink").push().setValue("null")
-                }
-            }
-        }
+//        AppLinkData.fetchDeferredAppLinkData(this) {
+//            if (it != null) {
+//                this.runOnUiThread {
+//                    database.child("facebook_depplink").push().setValue(it.toString())
+//                }
+//            } else {
+//                this.runOnUiThread {
+//                    database.child("facebook_depplink").push().setValue("null")
+//                }
+//            }
+//        }
 
         getValuesFromDatabase({
             dataSnapshot = it
