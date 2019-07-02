@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="easy.dating.foryou">
+    package="com.prettty.foryou">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,10 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="easy.dating.foryou.activities.MainScreenActivity"/>
+        <activity android:name="com.prettty.foryou.activities.MainPaginatActivity"/>
 
         <service
-            android:name="easy.dating.foryou.ui.BadgeIntentService"
+            android:name="com.prettty.foryou.ui.BadgeIntentService"
             android:exported="false" />
 
         <meta-data
@@ -42,22 +42,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="easy.dating.foryou.activities.MainPageActivity"
+            android:name="com.prettty.foryou.activities.ScreenMainActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="easy.dating.foryou.activities.LookingForActivity"
+            android:name="com.prettty.foryou.activities.WhoLookForActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="easy.dating.foryou.activities.RegistrationScreenActivity"
+            android:name="com.prettty.foryou.activities.RegistrationScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="easy.dating.foryou.activities.SignInScreenActivity"
+            android:name="com.prettty.foryou.activities.LogInScreenActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="easy.dating.foryou.activities.ResultScreenActivity"
+            android:name="com.prettty.foryou.activities.ScreenFinishActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="easy.dating.foryou.ui.SplashActivity"
+            android:name="com.prettty.foryou.ui.SplashActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -67,16 +67,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="easy.dating.foryou.ui.WebViewActivity"
+            android:name="com.prettty.foryou.ui.WebViewActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name="easy.dating.foryou.ui.ContentActivity"
+            android:name="com.prettty.foryou.ui.ContentActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="easy.dating.foryou.ui.DeepLinkWebView"
+            android:name="com.prettty.foryou.ui.DeepLinkWebView"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">

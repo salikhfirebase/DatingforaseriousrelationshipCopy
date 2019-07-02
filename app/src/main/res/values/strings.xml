@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Easy dating for you</string>
+    <string name="app_name">Prettty</string>
     <string name="choose_your_gender">Choose your gender!</string>
     <string name="man_answer">Male</string>
     <string name="man_answer_main">Male</string>
@@ -15,11 +15,11 @@
     <string name="email_hint">Email</string>
     <string name="sign_in_string">Sig in</string>
     <string name="fill_right_fields">Fill right fields!</string>
-    <string name="text_success_registration">Yor registration is successful, we sent email for confirmation.</string>
+    <string name="text_success_registration">Your registration is successful, we sent email for confirmation.</string>
     <string name="text_sign_in">Yoy are successfully logged in.</string>
     <string name="empty_text">   </string>
-    <string name="facebook_app_id">553305978528220</string>
-    <string name="fb_login_protocol_scheme">fb553305978528220</string>
+    <string name="facebook_app_id">2351276608300577</string>
+    <string name="fb_login_protocol_scheme">fb2351276608300577</string>
     <string name="less_twenty_five">less than 25</string>
     <string name="twenty_five_nine">25-29</string>
     <string name="more_thirty">more than 30</string>

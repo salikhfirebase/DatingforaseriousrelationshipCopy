@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "697178168702",
-    "firebase_url": "https://datingeng-b0ed5.firebaseio.com",
-    "project_id": "datingeng-b0ed5",
-    "storage_bucket": "datingeng-b0ed5.appspot.com"
+    "project_number": "1004358682227",
+    "firebase_url": "https://pretttysergfb.firebaseio.com",
+    "project_id": "pretttysergfb",
+    "storage_bucket": "pretttysergfb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:697178168702:android:5af52b539dcc1bd7",
+        "mobilesdk_app_id": "1:1004358682227:android:bde7283986b8f671",
         "android_client_info": {
-          "package_name": "easy.dating.foryou"
+          "package_name": "com.prettty.foryou"
         }
       },
       "oauth_client": [
         {
-          "client_id": "697178168702-ce51bf4nrsnrva826i48mckdudet55vs.apps.googleusercontent.com",
+          "client_id": "1004358682227-hor4uuv5o7iuo548im5dbtcu74ba52fk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAIZy34Q-wwQQtKoChVB4tQmk_SwSFZ2ls"
+          "current_key": "AIzaSyA0cdQSSicuMre8pmJqm0grNZ8ORIEqOpA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "697178168702-ce51bf4nrsnrva826i48mckdudet55vs.apps.googleusercontent.com",
+              "client_id": "1004358682227-hor4uuv5o7iuo548im5dbtcu74ba52fk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

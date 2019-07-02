@@ -17,7 +17,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/enterLogin"
+            android:id="@+id/login_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -28,7 +28,7 @@
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/enterPassword"
+            android:id="@+id/pass_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -39,7 +39,7 @@
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/enterEmail"
+            android:id="@+id/mail_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -50,7 +50,7 @@
             android:padding="10dp" />
 
         <DatePicker
-            android:id="@+id/enter_datePicker"
+            android:id="@+id/choose_date_picker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -60,7 +60,7 @@
             android:spinnersShown="true" />
 
         <Button
-            android:id="@+id/button_register"
+            android:id="@+id/sign_up_reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
